@@ -42,8 +42,10 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
 
+  const isRTL = locale === "ar";
+
   return (
-    <html lang="en">
+    <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

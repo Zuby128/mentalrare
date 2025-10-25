@@ -3,12 +3,13 @@ import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ["en", "fr", "de", "tr"],
+  locales: ["en", "fr", "de", "tr", "ar"],
 
   // Used when no locale matches
   defaultLocale: "en",
   pathnames: {
     "/contact": {
+      ar: "/contact-me",
       tr: "/irtibata-gec",
       en: "/contact-me",
       fr: "/contactez-moi",
