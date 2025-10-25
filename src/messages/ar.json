@@ -1,8 +1,29 @@
 {
+  "Header": {
+    "home": "الصفحة الرئيسية",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "team": "فريقنا",
+    "contact": "اتصل بنا",
+    "serTraining": "التدريب",
+    "serPublishing": "النشر",
+    "serCounseling": "الاستشارة",
+    "serValidation": "التحقق والترجمة",
+    "serCollaboration": "التعاون الدولي",
+    "contactus": "اتصل بنا"
+  },
+  "Hero": {
+    "slider1": "حسّن جودة خدمات الصحة النفسية الخاصة بك",
+    "slider1sub": "مرحبًا بكم في Mental Health Works",
+    "slider2": "خدمات تشخيص وعلاج ودعم التوحد",
+    "slider2sub": "نحن هنا مع تطبيقات حديثة مصممة للخبراء.",
+    "aboutus": "من نحن",
+    "courses": "الدورات"
+  },
   "HomePage": {
     "title": "مرحبا بالعالم",
-    "about": "انتقل إلى صفحة حول"
+    "about": "الذهاب إلى صفحة من نحن"
   },
   "title": "مرحبا بالعالم",
-  "about": "انتقل إلى صفحة حول"
+  "about": "الذهاب إلى صفحة من نحن"
 }
