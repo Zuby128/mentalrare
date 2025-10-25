@@ -12,6 +12,14 @@
     "serCollaboration": "International Collaboration",
     "contactus": "Contact Us"
   },
+  "Hero": {
+    "slider1": "Improve the quality of your Mental Health Service",
+    "slider1sub": "Welcome to Mental Health Works",
+    "slider2": "Autism Diagnosis, Treatment, and Support Services",
+    "slider2sub": "We are here with modern applications designed for experts.",
+    "aboutus": "About Us",
+    "courses": "Courses"
+  },
   "HomePage": {
     "title": "Hello World",
     "about": "Go to About Page"

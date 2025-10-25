@@ -9,6 +9,8 @@ import {
 } from "framer-motion";
 import Container from "../common/Container";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const motionVariants = {
   fadeUp: {
@@ -28,21 +30,8 @@ const motionVariants = {
   },
 };
 
-const heroSlides = [
-  {
-    title:
-      "Bilimsel kanıtlara dayalı uygulamalarla, ruh sağlığı hizmetinizin kalitesini artırın",
-    text: "Mental Health Çalışmalarına Hoş Geldiniz.",
-    img: "https://demo.exptheme.com/mentis/wp-content/uploads/2017/11/Depositphotos_25723681_original-1170x780.jpg",
-  },
-  {
-    title: "Otizm Tanı, Tedavi ve Destek Hizmetleri",
-    text: "Uzmanlar için tasarlanmış modern uygulamalarla yanınızdayız.",
-    img: "/home/autism-day-awareness-collage-style-with-people.jpg",
-  },
-];
-
 function Hero() {
+  const t = useTranslations("Hero");
   const [index, setIndex] = useState(0);
   useEffect(() => {
     const id = setInterval(
@@ -68,8 +57,21 @@ function Hero() {
   const fgX = useTransform(sx, (v: number) => v * 10);
   const fgY = useTransform(sy, (v: number) => v * 10);
 
+  const heroSlides = [
+    {
+      title: t("slider1"),
+      text: t("slider1sub"),
+      img: "https://demo.exptheme.com/mentis/wp-content/uploads/2017/11/Depositphotos_25723681_original-1170x780.jpg",
+    },
+    {
+      title: t("slider2"),
+      text: t("slider2sub"),
+      img: "/home/autism-day-awareness-collage-style-with-people.jpg",
+    },
+  ];
+
   return (
-    <section id="ana-sayfa" className="relative h-[68vh] sm:h-[78vh]">
+    <section className="relative h-[68vh] sm:h-[78vh]">
       <AnimatePresence mode="wait">
         {heroSlides.map(
           (s, i) =>
@@ -116,18 +118,18 @@ function Hero() {
                       variants={motionVariants.fadeUp}
                       className="mt-8 flex items-center gap-4"
                     >
-                      <a
+                      <Link
                         href="#hakkimizda"
                         className="rounded-full bg-white text-gray-900 px-6 py-3 text-sm font-semibold"
                       >
-                        Bizi Tanıyın
-                      </a>
-                      <a
+                        {t("aboutus")}
+                      </Link>
+                      <Link
                         href="#hizmetler"
                         className="rounded-full border border-white/50 text-white px-6 py-3 text-sm font-semibold"
                       >
-                        Kurslar
-                      </a>
+                        {t("courses")}
+                      </Link>
                     </motion.div>
                   </motion.div>
                 </Container>

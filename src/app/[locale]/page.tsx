@@ -1,17 +1,36 @@
 "use client";
-import Hero from "@/components/Home/Hero";
-import { useTranslations } from "next-intl";
+import dynamic from "next/dynamic";
 import { memo } from "react";
 
-function Home() {
-  const t = useTranslations("HomePage");
+const Hero = dynamic(() => import("@/components/Home/Hero"), { ssr: false });
+const Services = dynamic(() => import("@/components/Home/Services"), {
+  ssr: false,
+});
+const PartnersSlider = dynamic(
+  () => import("@/components/Home/PartnersSlider"),
+  {
+    ssr: false,
+  }
+);
+const Courses = dynamic(() => import("@/components/Home/Courses"), {
+  ssr: false,
+});
+const About = dynamic(() => import("@/components/Home/About"), {
+  ssr: false,
+});
+const ImageSlider = dynamic(() => import("@/components/Home/ImageSlider"), {
+  ssr: false,
+});
 
+function Home() {
   return (
     <div className="w-full min-h-screen">
       <Hero />
-      Main
-      <h1>{t("title")}</h1>
-      <h2>{t("about")}</h2>
+      <Services />
+      <PartnersSlider />
+      <Courses />
+      <About />
+      <ImageSlider />
     </div>
   );
 }

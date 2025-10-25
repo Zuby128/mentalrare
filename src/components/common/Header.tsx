@@ -17,22 +17,22 @@ function Header() {
   const nav = [
     { label: t("home"), href: "/" },
     { label: t("about"), href: "/about-us" },
-    { label: t("services"), href: "/hizmetler", hasDropdown: true },
+    { label: t("services"), href: "", hasDropdown: true },
     { label: t("team"), href: "/projeler" },
     { label: t("contact"), href: "/iletisim" },
   ];
 
   const services = [
-    { label: t("serTraining"), href: "#hizmetler/training" },
-    { label: t("serPublishing"), href: "#hizmetler/publishing" },
-    { label: t("serCounseling"), href: "#hizmetler/counseling" },
+    { label: t("serTraining"), href: "/services/training" },
+    { label: t("serPublishing"), href: "/services/publishing" },
+    { label: t("serCounseling"), href: "/services/counseling" },
     {
       label: t("serValidation"),
-      href: "#hizmetler/validation-translation",
+      href: "/services/validation-translation",
     },
     {
       label: t("serCollaboration"),
-      href: "#hizmetler/international-collaboration",
+      href: "/services/international-collaboration",
     },
   ];
 
