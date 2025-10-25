@@ -4,9 +4,9 @@ import React from "react";
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mx-auto container">
+    <div>
       <Header />
-      <div>{children}</div>
+      <div className="mx-auto container">{children}</div>
       <Footer />
     </div>
   );
