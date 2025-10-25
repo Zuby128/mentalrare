@@ -1,4 +1,17 @@
 {
+  "Header": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "team": "Ekibimiz",
+    "contact": "İletişim",
+    "serTraining": "Eğitim",
+    "serPublishing": "Yayınlar",
+    "serCounseling": "Danışmanlık",
+    "serValidation": "Doğrulama & Tercüme",
+    "serCollaboration": "Uluslararası İşbirliği",
+    "contactus": "İletişime Geç"
+  },
   "HomePage": {
     "title": "Merhaba dünya",
     "about": "Hakkımızda sayfasına git"

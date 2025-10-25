@@ -1,4 +1,17 @@
 {
+  "Header": {
+    "home": "Home Page",
+    "about": "About Us",
+    "services": "Services",
+    "team": "Our Team",
+    "contact": "Contact",
+    "serTraining": "Training",
+    "serPublishing": "Publishing",
+    "serCounseling": "Counseling",
+    "serValidation": "Validation & Translation",
+    "serCollaboration": "International Collaboration",
+    "contactus": "Contact Us"
+  },
   "HomePage": {
     "title": "Hello World",
     "about": "Go to About Page"

@@ -63,10 +63,10 @@ function Hero() {
   const sy = useSpring(mvy, { stiffness: 80, damping: 20, mass: 0.5 });
 
   // Parallax depth factors
-  const bgX = useTransform(sx, (v: any) => v * -20);
-  const bgY = useTransform(sy, (v: any) => v * -20);
-  const fgX = useTransform(sx, (v: any) => v * 10);
-  const fgY = useTransform(sy, (v: any) => v * 10);
+  const bgX = useTransform(sx, (v: number) => v * -20);
+  const bgY = useTransform(sy, (v: number) => v * -20);
+  const fgX = useTransform(sx, (v: number) => v * 10);
+  const fgY = useTransform(sy, (v: number) => v * 10);
 
   return (
     <section id="ana-sayfa" className="relative h-[68vh] sm:h-[78vh]">

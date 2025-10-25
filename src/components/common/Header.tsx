@@ -4,37 +4,37 @@ import LocaleSwitcher from "../LocaleSwitcher";
 import Container from "./Container";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Globe, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useTranslations } from "next-intl";
-
-const nav = [
-  { label: "Ana Sayfa", href: "#ana-sayfa" },
-  { label: "Hakkımızda", href: "#hakkimizda" },
-  { label: "Hizmetler", href: "#hizmetler", hasDropdown: true },
-  { label: "Takımımız", href: "#projeler" },
-  { label: "İletişim", href: "#iletisim" },
-];
-
-const services = [
-  { label: "Training", href: "#hizmetler/training" },
-  { label: "Publishing", href: "#hizmetler/publishing" },
-  { label: "Counseling", href: "#hizmetler/counseling" },
-  {
-    label: "Validation & Translation",
-    href: "#hizmetler/validation-translation",
-  },
-  {
-    label: "International Collaboration",
-    href: "#hizmetler/international-collaboration",
-  },
-];
+import { useLocale, useTranslations } from "next-intl";
 
 function Header() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("Header");
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+
+  const nav = [
+    { label: t("home"), href: "/" },
+    { label: t("about"), href: "/about-us" },
+    { label: t("services"), href: "/hizmetler", hasDropdown: true },
+    { label: t("team"), href: "/projeler" },
+    { label: t("contact"), href: "/iletisim" },
+  ];
+
+  const services = [
+    { label: t("serTraining"), href: "#hizmetler/training" },
+    { label: t("serPublishing"), href: "#hizmetler/publishing" },
+    { label: t("serCounseling"), href: "#hizmetler/counseling" },
+    {
+      label: t("serValidation"),
+      href: "#hizmetler/validation-translation",
+    },
+    {
+      label: t("serCollaboration"),
+      href: "#hizmetler/international-collaboration",
+    },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-gray-50 backdrop-blur border-b border-gray-100">
@@ -112,7 +112,7 @@ function Header() {
             target="_blank"
             className="inline-flex items-center gap-2 rounded-full bg-indigo-500 hover:bg-indigo-600 text-gray-100 px-4 py-2 text-sm font-semibold"
           >
-            İletişime Geç <ArrowRight className="w-4 h-4" />
+            {t("contactus")} <ArrowRight className="w-4 h-4" />
           </Link>
         </nav>
 
