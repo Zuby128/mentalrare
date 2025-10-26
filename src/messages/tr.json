@@ -6,24 +6,81 @@
     "team": "Ekibimiz",
     "contact": "İletişim",
     "serTraining": "Eğitim",
-    "serPublishing": "Yayınlar",
+    "serPublishing": "Yayıncılık",
     "serCounseling": "Danışmanlık",
-    "serValidation": "Doğrulama & Tercüme",
-    "serCollaboration": "Uluslararası İşbirliği",
-    "contactus": "İletişime Geç"
+    "serValidation": "Doğrulama & Çeviri",
+    "serCollaboration": "Uluslararası İş Birliği",
+    "contactus": "Bize Ulaşın"
   },
   "Hero": {
-    "slider1": "Bilimsel kanıtlara dayalı uygulamalarla, ruh sağlığı hizmetinizin kalitesini artırın",
-    "slider1sub": "Mental Health Çalışmalarına Hoş Geldiniz.",
+    "slider1": "Ruh sağlığı hizmetinizin kalitesini artırın",
+    "slider1sub": "Mental Health Works'e Hoş Geldiniz",
     "slider2": "Otizm Tanı, Tedavi ve Destek Hizmetleri",
-    "slider2sub": "Uzmanlar için tasarlanmış modern uygulamalarla yanınızdayız.",
+    "slider2sub": "Uzmanlar için tasarlanmış modern uygulamalarla buradayız.",
     "aboutus": "Hakkımızda",
-    "courses": "Kurslar"
+    "courses": "Eğitimler"
   },
-  "HomePage": {
-    "title": "Merhaba dünya",
-    "about": "Hakkımızda sayfasına git"
+  "Services": {
+    "title": "Hizmetlerimiz",
+    "service1": {
+      "title": "Eğitim",
+      "description": "Ruh sağlığı uzmanları için kapsamlı eğitim programları sunuyoruz."
+    },
+    "service2": {
+      "title": "Yayıncılık",
+      "description": "Yayın hizmetlerimiz dergiler, kitaplar ve çevrimiçi kaynakları içerir."
+    },
+    "service3": {
+      "title": "Danışmanlık",
+      "description": "Çeşitli ruh sağlığı sorunları için bireysel ve grup danışmanlık seansları sunuyoruz."
+    },
+    "service4": {
+      "title": "Doğrulama & Çeviri",
+      "description": "Ruh sağlığı değerlendirmeleri için doğrulama ve çeviri hizmetleri sunuyoruz."
+    },
+    "service5": {
+      "title": "Uluslararası İş Birliği",
+      "description": "Küresel düzeyde ruh sağlığı hizmetlerini geliştirmek için uluslararası kuruluşlarla iş birliği yapıyoruz."
+    },
+    "service6": {
+      "title": "Bağlı Eğitmenler",
+      "description": "Yüksek kaliteli eğitim sunmak için bağlı eğitmenler ağıyla çalışıyoruz."
+    }
   },
-  "title": "Merhaba dünya",
-  "about": "Hakkımızda sayfasına git"
+  "Partners": {
+    "title": "İş Ortaklarımız",
+    "subtitle": "Ruh sağlığı alanında lider kuruluşlarla iş birliği yapıyoruz."
+  },
+  "Courses": {
+    "title": "Eğitimlerimiz",
+    "subtitle": "Uzman eğitmenlerle düzenlenen profesyonel eğitim programları.",
+    "enroll": "Hemen Kaydol",
+    "displayAll": "Tüm Eğitimleri Görüntüle"
+  },
+  "Counter": {
+    "title": "Çalışmalarımız Devam Ediyor",
+    "subtitle": "Dünyanın Her Yerinde",
+    "countries": "Ülke",
+    "projects": "Tamamlanan Projeler",
+    "people": "Mutlu İnsanlar"
+  },
+  "EvidenceBased": {
+    "title": "Kanıta Dayalı Eğitimler",
+    "view": "Tümünü Görüntüle"
+  },
+  "Footer": {
+    "subtitle": "Otizm tanı, tedavi ve eğitimde güvenilir ortağınız",
+    "about": "Mental Health Works Hakkında",
+    "courses": "Eğitimler",
+    "services": "Hizmetlerimiz",
+    "quickLinks": "Hızlı Bağlantılar",
+    "contactInfo": "İletişim Bilgileri",
+    "rights": "Tüm Hakları Saklıdır",
+    "time": "Çalışma Saatleri",
+    "working": "Pazartesi - Cumartesi: 09.00-18.00 (TSI / UTC+3)",
+    "holiday": "Pazar: Kapalı",
+    "appointment": "Randevu",
+    "choose": "Size uygun bir zamanı takvimden seçin",
+    "makeapp": "Randevu Al"
+  }
 }

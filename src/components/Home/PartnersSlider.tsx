@@ -1,8 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const PartnersSlider: React.FC = () => {
+  const t = useTranslations("Partners");
   const partners = [
     {
       id: "1",
@@ -44,18 +46,15 @@ const PartnersSlider: React.FC = () => {
   }, [isDragging, totalWidth]);
 
   return (
-    <section className="pt-16 bg-white overflow-hidden">
+    <section className="pt-16 my-8 md:my-12 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            Güvenilir{" "}
             <span className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-              Çözüm Ortaklarımız
+              {t("title")}
             </span>
           </h2>
-          <p className="text-gray-600 text-lg">
-            Birlikte çalıştığımız değerli kurumlar
-          </p>
+          <p className="text-gray-600 text-lg">{t("subtitle")}</p>
         </div>
 
         <div className="overflow-hidden">
@@ -69,12 +68,6 @@ const PartnersSlider: React.FC = () => {
               <motion.div
                 key={`${partner.id}-${i}`}
                 className="flex-shrink-0 w-[200px] h-[120px] bg-white rounded-xl border-2 border-gray-100 p-6 flex items-center justify-center transition-all"
-                whileHover={{
-                  scale: 1.05,
-                  borderColor: "#818CF8",
-                  boxShadow: "0 10px 30px rgba(99, 102, 241, 0.15)",
-                  transition: { duration: 0.2 },
-                }}
               >
                 <img
                   src={partner.logo}

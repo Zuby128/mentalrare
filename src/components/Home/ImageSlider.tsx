@@ -1,8 +1,11 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const ImageSlider: React.FC = () => {
+  const t = useTranslations("EvidenceBased");
+
   const images = [
     {
       id: "1",
@@ -89,9 +92,8 @@ const ImageSlider: React.FC = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
           <span className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-            Kanıta Dayalı
-          </span>{" "}
-          Vaka Odaklı Eğitimler
+            {t("title")}
+          </span>
         </h2>
 
         <div className="overflow-hidden" ref={sliderRef}>
@@ -155,7 +157,7 @@ const ImageSlider: React.FC = () => {
         whileTap={{ scale: 0.98 }}
         className={`mx-auto mt-8 md:mt-12 lg:mt-16 px-8 bg-gradient-to-r from-indigo-500 to-purple-500  text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 transition-all`}
       >
-        Tümünü Göster
+        {t("view")}
       </motion.button>
     </section>
   );

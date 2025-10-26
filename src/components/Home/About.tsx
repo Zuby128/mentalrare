@@ -8,14 +8,16 @@ import {
 } from "../../hooks/useScrollAnimation";
 import { useCountUp } from "../../hooks/useCountUp";
 import { Award, Users, Lightbulb, Target } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const About: React.FC = () => {
   const { ref, controls, inView } = useScrollAnimation();
+  const t = useTranslations("Counter");
 
   const stats = [
-    { icon: Award, end: 5, label: "Ülke", suffix: "+" },
-    { icon: Users, end: 100, label: "Proje", suffix: "+" },
-    { icon: Lightbulb, end: 1000, label: "Mutlu İnsan", suffix: "+" },
+    { icon: Award, end: 5, label: t("countries"), suffix: "+" },
+    { icon: Users, end: 100, label: t("projects"), suffix: "+" },
+    { icon: Lightbulb, end: 1000, label: t("people"), suffix: "+" },
     // { icon: Target, end: 95, label: "Success Rate", suffix: "%" },
   ];
 
@@ -62,7 +64,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <section id="about" className="pt-4 bg-gradient-to-b from-white to-gray-50">
+    <section id="about" className="pt-4 bg-white">
       <div className="container mx-auto px-6" ref={ref}>
         <motion.div
           initial="hidden"
@@ -77,9 +79,9 @@ const About: React.FC = () => {
               variants={fadeInUp}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
             >
-              Türkiye ve Dünyada
+              {t("title")}
               <span className="block bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-                Çalışmalarımız Devam Ediyor
+                {t("subtitle")}
               </span>
             </motion.h2>
           </div>

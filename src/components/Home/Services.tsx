@@ -14,61 +14,55 @@ import {
   HeartHandshake,
   Brain,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Services: React.FC = () => {
   const { ref, controls } = useScrollAnimation();
 
+  const t = useTranslations("Services");
+
   const services = [
     {
       icon: BookOpenText,
-      title: "Eğitimler",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      features: ["lorem 1", "lorem 2", "lorem 3"],
+      title: t("service1.title"),
+      description: t("service1.description"),
       color: "from-pink-500 to-rose-500",
       delay: 0,
     },
     {
       icon: PenLine,
-      title: "Yayınlar",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      features: ["lorem 1", "lorem 2", "lorem 3"],
+      title: t("service2.title"),
+      description: t("service2.description"),
       color: "from-blue-500 to-cyan-500",
       delay: 0.1,
     },
     {
       icon: Globe,
-      title: "Danışmanlık",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      features: ["lorem 1", "lorem 2", "lorem 3"],
+      title: t("service3.title"),
+      description: t("service3.description"),
       color: "from-green-500 to-emerald-500",
       delay: 0.2,
     },
     {
       icon: Languages,
-      title: "Doğrulama & Tercüme",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: t("service4.title"),
+      description: t("service4.description"),
       features: ["lorem 1", "lorem 2", "lorem 3"],
       color: "from-purple-500 to-violet-500",
       delay: 0.3,
     },
     {
       icon: HeartHandshake,
-      title: "Uluslararası İşbirliği",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: t("service5.title"),
+      description: t("service5.description"),
       features: ["lorem 1", "lorem 2", "lorem 3"],
       color: "from-orange-500 to-amber-500",
       delay: 0.4,
     },
     {
       icon: Brain,
-      title: "Profesyonel Eğitmenler",
-      description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: t("service6.title"),
+      description: t("service6.description"),
       features: ["lorem 1", "lorem 2", "lorem 3"],
       color: "from-red-500 to-pink-500",
       delay: 0.5,
@@ -137,9 +131,8 @@ const Services: React.FC = () => {
               variants={fadeInUp}
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
             >
-              Mevcut
               <span className="block bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-                Hizmetlerimiz
+                {t("title")}
               </span>
             </motion.h2>
           </div>

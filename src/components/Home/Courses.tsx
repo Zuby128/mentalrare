@@ -1,10 +1,12 @@
 "use client";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { CalendarDays, User, Users, ArrowRight } from "lucide-react";
+import { CalendarDays, User, Users, ArrowRight, Languages } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Courses: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("Courses");
 
   const courses = [
     {
@@ -47,21 +49,17 @@ const Courses: React.FC = () => {
   return (
     <section
       id="courses"
-      className="container mx-auto py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden"
+      className="container mx-auto py-20 bg-white overflow-hidden"
     >
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Güncel{" "}
             <span className="block bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
-              Eğitimlerimiz
+              {t("title")}
             </span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Uzman eğitmenler eşliğinde düzenlenen profesyonel eğitim
-            programları.
-          </p>
+          <p className="text-gray-600 max-w-2xl mx-auto">{t("subtitle")}</p>
         </div>
 
         {/* Slider */}
@@ -124,11 +122,17 @@ const Courses: React.FC = () => {
                     </div>
 
                     {/* Dates */}
-                    <div className="flex items-center text-gray-500 text-xs mb-6">
+                    <div className="flex items-center text-gray-500 text-xs mb-3">
                       <CalendarDays className="w-4 h-4 mr-2" />
                       <span>
-                        {course.startDate} – {course.endDate}
+                        {course.startDate} - {course.endDate}
                       </span>
+                    </div>
+
+                    {/* Languages */}
+                    <div className="flex items-center text-gray-500 text-xs mb-6">
+                      <Languages className="w-4 h-4 mr-2" />
+                      <span>English, Türkçe, عربي</span>
                     </div>
                   </div>
 
@@ -138,7 +142,7 @@ const Courses: React.FC = () => {
                     whileTap={{ scale: 0.98 }}
                     className={`w-full bg-gradient-to-r ${course.color} text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 transition-all`}
                   >
-                    Kayıt Ol <ArrowRight className="w-4 h-4" />
+                    {t("enroll")} <ArrowRight className="w-4 h-4" />
                   </motion.button>
                 </div>
               </motion.div>
@@ -150,7 +154,7 @@ const Courses: React.FC = () => {
             whileTap={{ scale: 0.98 }}
             className={`mx-auto mt-8 md:mt-12 lg:mt-16 px-8 bg-gradient-to-r from-indigo-500 to-purple-500  text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 transition-all`}
           >
-            Tüm Kursları Göster
+            {t("displayAll")}
           </motion.button>
         </div>
       </div>

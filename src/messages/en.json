@@ -13,17 +13,74 @@
     "contactus": "Contact Us"
   },
   "Hero": {
-    "slider1": "Improve the quality of your Mental Health Service",
+    "slider1": "Improve the quality of your mental health service",
     "slider1sub": "Welcome to Mental Health Works",
     "slider2": "Autism Diagnosis, Treatment, and Support Services",
     "slider2sub": "We are here with modern applications designed for experts.",
     "aboutus": "About Us",
     "courses": "Courses"
   },
-  "HomePage": {
-    "title": "Hello World",
-    "about": "Go to About Page"
+  "Services": {
+    "title": "Our Services",
+    "service1": {
+      "title": "Training",
+      "description": "We provide comprehensive training programs for mental health professionals."
+    },
+    "service2": {
+      "title": "Publishing",
+      "description": "Our publishing services include journals, books, and online resources."
+    },
+    "service3": {
+      "title": "Counseling",
+      "description": "We offer individual and group counseling sessions for various mental health issues."
+    },
+    "service4": {
+      "title": "Validation & Translation",
+      "description": "We provide validation and translation services for mental health assessments."
+    },
+    "service5": {
+      "title": "International Collaboration",
+      "description": "We collaborate with international organizations to enhance mental health services globally."
+    },
+    "service6": {
+      "title": "Affiliated Trainers",
+      "description": "We work with a network of affiliated trainers to deliver high-quality training."
+    }
   },
-  "title": "Hello World",
-  "about": "Go to About Page"
+  "Partners": {
+    "title": "Our Partners",
+    "subtitle": "We collaborate with leading organizations in the mental health field."
+  },
+  "Courses": {
+    "title": "Our Courses",
+    "subtitle": "Professional training programs organized with expert trainers.",
+    "enroll": "Enroll Now",
+    "displayAll": "View All Courses"
+  },
+  "Counter": {
+    "title": "Our Work Continues",
+    "subtitle": "All Over the World",
+    "countries": "Country",
+    "projects": "Completed Projects",
+    "people": "Happy People"
+  },
+  "EvidenceBased": {
+    "title": "Evidence Based Trainigs",
+    "view": "View All"
+  },
+  "Footer": {
+    "subtitle": "Your reliable partner in autism diagnosis, treatment and training",
+    "about": "About Mental Health Works",
+    "courses": "Courses",
+    "services": "Our Services",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "rights": "All Rights Reserved",
+    "time": "Working Hours",
+    "working": "Monday - Saturday: 09.00-18.00 (TSI / UTC+3)",
+    "holiday": "Sunday: Closed",
+    "appointment": "Appointment",
+    "choose": "Choose a time on the calendar that suits you",
+    "makeapp": "Make an Appointment"
+  }
 }
